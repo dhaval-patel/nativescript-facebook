@@ -3,7 +3,7 @@ let iosApplication;
 let appEventsLogger;
 export function initAnalytics() {
     iosApplication = application.iosApplication;
-    FBSDKAppEvents.activateApp();
+    FBSDKAppEvents.shared.activateApp();
 }
 
 export function logEvent(name: string, parameters?: any) {

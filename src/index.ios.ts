@@ -22,7 +22,7 @@ class BaseDelegate extends UIResponder implements UIApplicationDelegate {
   }
 
   applicationDidBecomeActive(application: UIApplication): void {
-    FBSDKAppEvents.activateApp();
+    FBSDKAppEvents.shared.activateApp();
   }
 }
 

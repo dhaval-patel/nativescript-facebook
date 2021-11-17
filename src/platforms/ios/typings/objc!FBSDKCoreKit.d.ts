@@ -241,8 +241,9 @@ declare var FBSDKAppEventState: string;
 declare var FBSDKAppEventZip: string;
 
 declare class FBSDKAppEvents extends NSObject {
-
-	static activateApp(): void;
+	static shared: FBSDKAppEvents;
+	
+	activateApp(): void;
 
 	static alloc(): FBSDKAppEvents; // inherited from NSObject
 
